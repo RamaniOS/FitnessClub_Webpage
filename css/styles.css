@@ -103,7 +103,7 @@ img {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 685px) {
   nav li {
     display: inline;
     float: left;
@@ -112,6 +112,7 @@ img {
     padding-left: 0;
     padding-right: 0;
     width: 18%;
+    white-space: nowrap;
   }
 
   main {
@@ -148,4 +149,84 @@ img {
     font-weight: bold;
     margin-top: 0.7em;
   }
+}
+
+@media only screen and (min-width: 860px) {
+  /* style for container div */
+  #container {
+    width: 80%;
+  }
+
+  nav ul {
+    margin: 0;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
+
+  nav li {
+    border-radius: 0;
+    border-top: solid #000000;
+    border-bottom: solid #000000;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 20%;
+  }
+
+  nav li a {
+    display: inline-block;
+    padding: 0.7em;
+  }
+
+  main {
+    border-style: none;
+    box-shadow: 0.5em 0.5em 0.5em #404040;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  /* style for paragraph  */
+  main p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  /* style for item class */
+  .items {
+    margin-bottom: 7em;
+  }
+
+  /* adding pseudo classes styles for the links */
+  nav li a:hover {
+    color: #ffff00;
+    font-style: italic;
+
+  }
+
+  nav li a:link {
+    color: #ffffff;
+
+  }
+
+  nav li a:visited {
+    color: #ffff99;
+  }
+
+ body {
+   /* safari and chrome */
+   background: -webkit-linear-gradient(#ffffff, #ffff99);
+
+   /* add for other browsers */
+   background: linear-gradient(#ffffff, #ffff99);
+
+   /* Mozila browsers */
+   background: -moz-linear-gradient(#ffffff, #ffff99);
+
+   /* opera browsers */
+   background: -o-linear-gradient(#ffffff, #ffff99);
+ }
+
+
+
+
 }
